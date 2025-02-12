@@ -2,72 +2,94 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Free Period Checker</title>
-    <style>
-        /* Basic Styling - Customize as needed */
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-        }
-
-        #nameForm {
-            margin-bottom: 20px;
-        }
-
-        #results {
-            margin-top: 10px;
-        }
-    </style>
+    <meta charset=“UTF-8” />
+    <link rel="stylesheet" href="style.css" />
+    <title> Arty Basilio </title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Free Period Checker</h1>
+    <div class="nav-bar">
+        <div class="float: left;">
+            <a href="index.html" class="nav-item" title="Home"></a>
 
-        <form id="nameForm">
-            <label for="name">Enter Name:</label>
-            <input type="text" id="name" name="name" required>
-            <input type="submit" value="Check">
-        </form>
-
-        <div id="results"></div>
+            <div style="float: right;">
+                <a href="#projects" class="nav-item" title="Projects"></a>
+            </div>
+        </div>
     </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+    <p class="name"><span class="highlight-pink">Arty Basilio</span></p>
+    <p class="intro"><i>&#161; Como el águila en mi bandera, vuelo! </b> My name is Arty Basilio, Soy Mexicana y Colombiana, and I’m currently a senior in High School. I’m interested in sustainability and helping the environment, and I’m also interested in pursuing coding.      <br /></p>
+    </p>
 
+    <div id="currently" class="pink-background">
+        <div class="margin">
+            <p class="proj-title"><b>Computer Science Projects</b> @ GitHub <a href="https://github.com/pinkmatterr"
+                    style="float: right;font-size: 16px;">&nbsp;Mar 2024&#8212;Present</span></p>
+            <p class="proj-text">Currently the coding languages which I have the most experience with are C# from Unity, CSS, HTML, and Swift. I’m hoping to learn more about Python and JavaScript soon (Press here to see my projects on GitHub). </p>
+        </div>
+    </div>
+    
+   <div class="pink-background">
+  <div class="margin">
+    <h2 class="section-title"><span class="highlight-pink">What have I done before?</span></h2>
 
-    <script>
-        const form = document.getElementById('nameForm');
-        const resultsDiv = document.getElementById('results');
+      <p class="proj-title"><b>Presenter</b> @Curious Cardinals Symposium 
+      <p class="proj-text">I live in NYC and I wanted to research one of the biggest issues that I see everyday which is Trash. Trash overflows the city constantly and although some solutions are already being implemented I wanted to see if there was a solution that 
+      could solve that problem that hasn’t already been thought of. That is why over the summer I connected with multiple people at New York City’s
+      department of Sanitation and brainstormed solutions which could be implemented in the future. </p>
+    
+    <p class="proj-title"><b>Game Programmer                            </b> @ The City College of New York Aug 2023-Dec 2023                
+    <p class="proj-text">Learned how to utilize C Sharp on Unity over last fall and was able to create a 2D Platform game which was presented in front of my class.  </p>
 
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
+    <p class="proj-title"><b>Google Code Next Programmer                            </b> @ Google NYC  Sep 2023-Present                  
+    <p class="proj-text">Studied Swift Learned how to make an application using Swift UI and how to make an app on Vision Pro using swift data. Currently in the process of making an app to help lower income kids in NYC have a better chance at discovering opportunities that match their interests.
+    </p>
+    <p class="proj-title"><b> Girls Start-Up Intern </b> @ Seeds of Fortune May 2024-Present
+    <p class="proj-text"> 
+        <li>Selected as one of 20 out of 60 girls to be a Girls Start Up Finalist to pitch their business idea</li>
+        <li>Designed and pitched a business plan to industry experts at BMO capitals, for Girls with Charms that is used to strengthen “girlhood” and celebrate accomplishments </li>
+        <Li>Engaged in a rigorous virtual college preparatory program exploring professionalism and leadership</Li>
+        <li>Received $2000 as 3rd place winner for funding the app and web development of my business GirlsWithCharms through the Seeds of Fortune collaboration with the 10X competition</li>
+    </p>    
+  </div>
+</div>
 
-            const name = document.getElementById('name').value;
-
-            fetch('/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: 'name=' + encodeURIComponent(name),
-            })
-            .then(response => response.text())
-            .then(data => {
-                resultsDiv.innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                resultsDiv.innerHTML = "<p>An error occurred.</p>";
-            });
-        });
-    </script>
-
+  <div class="pink-background">
+    <div class="margin">
+      <h2 class="section-title"><span class="highlight-pink">Awards & Recognition</span></h2>
+      <ul>  
+        <li>Gold Tech Hispanic Heritage Youth Award: 10 finalists, top recipient of CT, MA, NH, NY, RH, and VT, 2024</li>
+        <li>NCWIT Aspirations in Computing National Honorable Mention: Top 400 out of 3700+ chosen, 2025</li>
+        <li>Gates Scholarship Semifinalist: Top 8% of about 34,000+ seniors for academics and leadership, 2024</li>
+        <li>Questbridge National Match Finalist, 2024</li>
+        <li>Questbridge College Prep Scholar, 2024</li>
+        <li>Williams and Mary Leadership Award, 2024</li>
+        <li>3rd Place in the Girls Start Up Business Plan Competition, 2024</li>
+        <li>National Hispanic Recognition Program, 2024</li>
+        <li>Morgan Stanley Finance Academy Finalist, 2024</li>
+        <li>Grip Tape Scholarship Award, 2024</li>
+        <li>Full scholarship to Kode With Klossy’s Data Science camp, 2024</li>
+        <li>Finalist in Division A PSAL Girls Varsity Rugby, 2024</li>
+        <li>National Honors Society, 2024</li>
+        <li>Finalist in Division A PSAL Girls Varsity Rugby, 2023</li>
+        <li>Global Academic Excellence Award, 2023</li>
+      </ul>
+    </div>
+  </div>
+    
+    <div class="margin bottom-margin">
+        <div class="footer social-media">
+            <div class="social-media-item">
+                <a href="https://www.linkedin.com/in/artybasilio/" target="_blank"></a>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2024 Arty Basilio. All rights reserved.</p>
+    </div>
 </body>
 
 </html>
