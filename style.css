@@ -1,32 +1,153 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Free Period Checker</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            background-color: #f4f4f4; /* Light background color */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            min-height: 100vh; /* Ensure full viewport height */
-        }
+* {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #000000;
+  font-family: "Times New Roman", "Comic Sans MS", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
 
-      .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            width: 400px; /* Adjust width as needed */
-        }
+@media screen and (max-width: 1050px) {
+  .svg-column {
+    width: 50%;
+  }
+}
 
-        h1 {
-            text-align: center;
-            color: #333; /* Darker heading color */
-            margin-bottom: 20px;
-        }
+@media screen and (max-width: 750px) {
+  .svg-column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+  }
+  .triple-column {
+    width: 100%;
+  }
+}
 
-        form {
-            margin-bottom: 20px;
+.highlight-pink {
+  background: linear-gradient(180deg,rgba(196, 81, 186, 0) 65%, #c451ba 65%);
+}
+
+.space {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.name {
+  font-size: 500%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.intro {
+  font-size: 150%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.margin {
+  margin-left: 110px;
+  margin-right: 110px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.nav-bar {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.pink-background {
+  background: #ffd4fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.section-title {
+  font-size: 200%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.descTitle {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+}
+
+.bio {
+  margin-top: 0px;
+}
+
+.proj-title {
+  font-size: 200%;
+}
+
+.proj-text {
+  margin-top: 0;
+  font-style: italic;
+  padding-top: 5px;
+  font-size: 1rem;
+  margin-left: 5%;
+}
+
+.icon {
+  width: 1em;
+  display: inline;
+  position: relative;
+  top: 0.75em;
+}
+
+.dot-icon {
+  width: 1em;
+  display: inline;
+  position: relative;
+  top: 0.85em;
+}
+
+.title-icon {
+  width: 1em;
+  display: inline;
+  position: relative;
+  top: 0.4em;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+.descriptive-icon {
+  width: 1.5em;
+  display: inline;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+
+.svg-center {
+  text-align: center;
+}
